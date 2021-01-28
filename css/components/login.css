@@ -1,0 +1,16 @@
+
+.box{
+    width: 50%;
+    height: 800px;
+
+    background: #C6DE6F;
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+.form-control{
+    border-radius: 20px;
+    border-color: #6E5596;
+}
