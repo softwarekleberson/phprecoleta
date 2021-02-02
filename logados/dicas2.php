@@ -1,3 +1,6 @@
+<?php
+include('verificalog.php')
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -23,7 +26,7 @@
 <body>
     <header>
     <?php
-    include('menu.html');
+    include('menu2.html');
     ?>
     </header>
 

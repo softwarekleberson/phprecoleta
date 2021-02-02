@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -25,6 +26,7 @@
     <header>
     <?php
     include('menu.html');
+    include('modal.php');
     ?>
     </header>
 

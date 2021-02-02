@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -21,34 +21,57 @@
     <header>
     <?php
     include('menu.html');
+    include('modal.php');
     ?>
     </header>
 
     <div class="container my-4">
        <div class="box">
-        <form class="container">
+        <form method="POST" class="container">
             <div class="mb-2">
               <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Senha</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" name="senha" class="form-control" id="senha">
             </div>
             <button type="submit" class="btn btn-primary">Entrar</button>
-          </form>
+        </form>
        </div>
     </div>
 
     <?php
-    include('modal.html');
-    ?>
+    session_start();
+    include('connection.php');
+    
+        if(isset($_POST['email']) && isset($_POST['senha'])) {
 
+          $email= mysqli_real_escape_string($conn, $_POST['email']);
+          $senha = mysqli_real_escape_string($conn, $_POST['senha']);
+
+          $sql = "SELECT email, senha FROM tbl_cadastro WHERE email='{$email}' AND senha=md5('{$senha}')";
+          $retorno = mysqli_query($conn, $sql);
+          $linhas = mysqli_num_rows($retorno);
+
+            if($linhas == 1){
+              $_SESSION['email'] = $email;
+              header('Location:index.php');
+              exit();
+            } else {
+              $_SESSION['nao_autenticado'] = true;
+              echo"<script>alert('Usuário ou senha inválida!!');</script>";  
+              header('Location:index.php');        
+              exit();
+            }
+        } 
+    ?>
+        
     <?php
     include('footer.html');
     ?>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

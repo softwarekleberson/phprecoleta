@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -62,7 +62,7 @@
     </div>
 
     <?php
-    include('modal.html');
+    include('modal.php');
     ?>
 
     <?php
