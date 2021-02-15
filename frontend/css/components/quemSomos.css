@@ -1,0 +1,16 @@
+.titulo{
+    font-size: 2rem;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+}
+
+article{
+    font-size: 1.2rem;
+}
+
+.cover-play{
+    height: 300px;
+    width: 100%;
+}
