@@ -1,8 +1,9 @@
-h2, p{
-    margin: 20px;
-    font-family: 'Elsie Swash Caps', cursive;
+.container{
+    
 }
-
+h2{
+    margin-top: 6rem;
+}
 .freeway{
     display: flex;
     align-content: center;

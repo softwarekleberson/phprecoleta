@@ -3,15 +3,11 @@
     justify-content: center;
     align-items: center;
 }
-.img-banner{
-    background: url(../../assets/img/conceitos-de-ecologia.jpg);
-    background-repeat: no-repeat;
-    
-    object-fit: cover;
-    height: 550px;
-    
-}
-
 .navbar-brand{
     font-size: 1.5rem;
+}
+
+.img-logo{
+    width: 6rem;
+    height: 3.5rem;
 }
