@@ -2,94 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  
+ 
+  <link rel="stylesheet" href="css/components/index.css">
+  <link rel="stylesheet" href="css/components/buttons.css">
+  <link rel="stylesheet" href="css/components/carousel.css">
 
-    <link rel="stylesheet" href="css/components/menu.css">
-    <link rel="stylesheet" href="css/components/footer.css">
-    <link rel="stylesheet" href="css/components/buttons.css">
-    <link rel="stylesheet" href="css/components/carousel.css">
-    <link rel="stylesheet" href="css/components/home.css">
-    <link rel="stylesheet" href="css/components/quemSomos.css">
+  <title>Home | Recoleta</title>
 
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <title>Home | Recoleta</title>
 </head>
 
 <body>
-    <header>
-    <?php
-    include('menu.html');
-    ?>
-    </header>
+  <?php
+  include('menu.html');
+  ?>
 
-    <main>
+  <main>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./assets/img/img13.jpeg" class="d-inlineblock w-100 img-carrosel" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h1 class="bg-dark">Comunidade Hatsuta</h1>
-        <h3 class="bg-dark">Antiga habitação nesta invasão.</h3>
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/img13.jpeg" class="d-inlineblock w-100 img-carrosel" alt="Comunidade Hatsuta">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Comunidade Hatsuta</h5>
+            <p>Antiga habitação nesta invasão.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/img16.jpeg" class="d-block w-100 img-carrosel" alt="Condomínio Residencial Lavras">
+          <div class="carousel-caption d-none d-md-block dark">
+            <h5>Condomínio Residencial Lavras</h5>
+            <p>Antes da imersão do Recoleta.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/condominio.PNG" class="d-block w-100 img-carrosel" alt="Condomínio Residencial Lavras">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Condomínio Residencial Lavras</h5>
+            <p>O futuro dependerá daquilo que fazemos no presente.</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <img src="./assets/img/img16.jpeg" class="d-block w-100 img-carrosel" alt="...">
-      <div class="carousel-caption d-none d-md-block dark">
-        <h1 class="bg-dark">Condomínio Residencial Lavras</h1>
-        <h3 class="bg-dark">Antes da imersão do Recoleta.</h3>
+      <div class="container mt-4">
       </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
     </div>
-    <div class="carousel-item">
-      <img src="./assets/img/condominio.PNG" class="d-block w-100 img-carrosel" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h1 class="bg-dark">Condomínio Residencial Lavras</h1>
-        <h3 class="bg-dark">O futuro dependerá daquilo que fazemos no presente. <br/> Recoleta apoia essa missão hoje.</h3>
-      </div>
+
+    <div class="jumbotron container">
+      <h1 class="display-4">O que faz o Recoleta?</h1>
+      <p class="lead">Somos uma organização não-governamental sem fins lucrativos, que trabalha pela educação e conscientização. Para o consumo consciente e estilo de vida sustentável !</p>
+      <hr class="my-4">
+      
+      <p class="lead">
+        <a class="btn button-send" href="quemSomos.php" role="button">Saiba mais</a>
+      </p>
     </div>
-  </div>
-  <div class="container mt-4">
-  <h5>
-        Nosso projeto viu um problema no descarte de lixo nas comunidades que eram retiradas de favelas, onde viviam em em situação precária com esgoto a céu aberto, lixo, muitas ao lado de córregos, áreas de mananciais, morros sujeitos a deslizamentos. Além do perigo de incêndio.
-        <br/> <br/> Essas comunidades foram realocadas para prédios do CDHU, porém sem uma "educação de como cuidar do ambiente onde se vive" o lindo condomínio se tornou uma favela na vertical. Onde o descarte de lixo e a falta de coletividade deixaram o lugar depreciado.
-        <br/> <br/> Com isso o recoleta viu uma oportunidade de mudar essa história utilizando o Condomínio Lavras como projeto piloto, através da reeducação dos moradores, inicialmente com foco nas crianças, para a conscientização de que se separarem o lixo haverá melhoria na qualidade de vida deles, redução nos custos com limpeza, além da valorização de seus imóveis.
-  </h5>
-</div>
+  </main>
 
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </a>
-</div>
+  <?php
+  include('modal.html');
+  ?>
 
+  <?php
+  include('footer.html')
+  ?>
 
-    </main>
-
-    <?php
-    include('modal.html');
-    ?>
-
-    <?php
-    include('footer.html');
-    ?>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 
 </html>
