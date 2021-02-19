@@ -67,7 +67,7 @@
 
     <div class="jumbotron container">
       <h1 class="display-4">O que faz o Recoleta?</h1>
-      <p class="lead">Somos uma organização não-governamental sem fins lucrativos, que trabalha pela educação e conscientização. Para o consumo consciente e estilo de vida sustentável !</p>
+      <p class="lead">Somos uma organização não-governamental sem fins lucrativos, que trabalha pela educação e conscientização. Para o consumo consciente e estilo de vida sustentável!</p>
       <hr class="my-4">
       
       <p class="lead">

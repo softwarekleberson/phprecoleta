@@ -43,7 +43,7 @@
                 <img class="card-img-top" src="assets/img/reciclagem.png" alt="Imagem de capa do card">
                 <div class="card-body">
                     <h5 class="card-title">Coleta Seletiva</h5>
-                    <p class="card-text">Encontre pontos de coleta seletiva proximos a sua residencia.</p>
+                    <p class="card-text">Encontre pontos de coleta seletiva, próximos a sua residência.</p>
                     <a href="./memoria/memory.html" class="btn button-play">Acessar</a>
                 </div>
             </article>
